@@ -3,6 +3,40 @@
     box-sizing: border-box;
 }
 
+:root {
+    /*COLOR*/
+    --bg-primary: white;
+
+    --fc-primary: #3D4449;
+    --fc-secondary: #7F888F;
+    --fc-terceary: #48BB76;
+
+    /*FONT*/
+    --ff-primary: font-family: 'Roboto', sans-serif;
+
+    --fs-xl: 3.5rem;
+    --fs-600: 1.75rem;
+    --fs-400: 1.25rem;
+    --fs-300: 1.125rem;
+    --fs-200: 1rem;
+    --fs-100: 0.8rem;
+
+
+    --fw-primary: 700;
+    --fw-secondary: 400;
+}
+
+@media (min-width: 40em) {
+    :root {
+        --fs-xl: 5rem;
+        --fs-600: 2rem;
+        --fs-400: 1.5rem;
+        --fs-300: 1.25rem;
+        --fs-200: 1.125rem;
+        --fs-100: 1rem;
+    }
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
