@@ -8,11 +8,11 @@
     --bg-primary: white;
 
     --fc-primary: #3D4449;
-    --fc-secondary: #7F888F;
+    --fc-secondary: #7f888f;
     --fc-terceary: #48BB76;
 
     /*FONT*/
-    --ff-primary: font-family: 'Roboto', sans-serif;
+    --ff-primary: 'Roboto Slab', sans-serif;
 
     --fs-xl: 3.5rem;
     --fs-600: 1.75rem;
@@ -41,12 +41,80 @@
 /* BASE STYLES
 /*******************************************/
 
+ * {
+    font-family: var(--ff-primary);
+    font-size: var(--fw-secondary);
+    line-height: 1.65;
+    color: var(--fc-secondary)
+}
+
+.header-text {
+    font-size: var(--fs-100);
+    color: var(--fc-secondary);
+}
+
+strong {
+    color: var(--fc-primary);
+}
+
+i {
+    font-size: var(--fs-200);
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 75.5rem);
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-block: 1.25rem;
+    align-items: center;
+}
+
+.container-header-text {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navlist-flex * {
+    display: flex;
+    gap: 1.8rem;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 0.313rem solid var(--fc-terceary);
+}
