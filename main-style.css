@@ -331,6 +331,11 @@ h2 {
         width: 100%;
     }
 
+    .main-button-container {
+        display: flex;
+        justify-content: center;
+    }
+
     .services-section-split-left,
     .project-section-split-left {
         padding-right: 0rem;
