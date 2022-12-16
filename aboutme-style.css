@@ -1,6 +1,7 @@
 :root {
     /*COLOR*/
     --bg-primary: #F2F2F2;
+    --bg-secondary: #090909;
 
     --fc-primary: #3D4449;
     --fc-secondary: #7F888F;
@@ -27,7 +28,7 @@
 
 @media (min-width: 40em) {
     :root {
-        --fs-icons-nav: 1.22rem;
+        --fs-icons-nav: 1.20rem;
         --fs-icons: 2rem;
 
         --fs-xl: 3rem;
@@ -52,7 +53,8 @@
 /* BASE STYLES
 /*******************************************/
 
-html {
+body {
+    transition: 0.5s ease;
     background-color: var(--bg-primary);
 }
 
@@ -164,7 +166,6 @@ nav {
 /*MAIN*/
 
 main {
-    margin-top: 3.5rem;
     padding-bottom: 5rem;
 }
 
@@ -172,23 +173,29 @@ main {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    margin-top: 3.5rem;
 }
 
 .main-container-split {
     width: 50%;
 }
 
+.main-container-photo {
+    padding-left: 2rem;
+}
+
 .headshot-container {
-    display: flex;
+    display: block;
     height: 26em;
     width: 100%;
 }
 
 .headshot {
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: right;
+    object-fit: cover;
+    border-radius: 0.375em;
 }
 
 .main-text {
@@ -287,6 +294,11 @@ i:hover {
     rotate: -360deg;
 }
 
+.header-text:hover {
+    transition: 0.3s ease;
+    color: var(--fc-terceary);
+}
+
 header {
     border-bottom: 0.313rem solid var(--fc-terceary);
 }
@@ -323,7 +335,7 @@ h2 {
 }
 
 .project-section-container-split img {
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 
 .project-section-container-split img:hover {
@@ -342,9 +354,28 @@ h2 {
     border-top: 0.1rem solid var(--bc-primary);
 }
 
-/*MEDIA QUERY*/
+.dark-mode {
+    transition: 0.5s ease;
+    background-color: var(--bg-secondary);
+}
 
-@media (max-width: 40em) {
+.dark-mode-fonts *{
+    color: var(--bg-primary);
+}
+
+.dark-mode-ommit {
+    color: var(--fc-secondary);
+}
+
+.dark-mode-buttons {
+    background-color: #132113;
+}
+
+/******************************************
+/* MEDIA QUERY
+/*******************************************/
+
+@media (max-width: 40rem) {
 
     header {
         display: flex;
@@ -406,5 +437,9 @@ h2 {
 
     .project-section-border-top {
         padding-bottom: 3.5rem;
+    }
+
+    .main-container-photo {
+        padding-left: 0rem;
     }
 }
