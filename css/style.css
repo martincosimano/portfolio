@@ -32,6 +32,7 @@
         --fs-icons: 2rem;
 
         --fs-xl: 3rem;
+        --fs-600: 2rem;
         --fs-400: 1.7rem;
         --fs-200: 1.125rem;
         --fs-100: 1rem;
@@ -92,8 +93,18 @@ h1 {
 
 .main-text {
     font-size: var(--fs-100);
-    text-transform: uppercase;
 }
+
+/*SERVICES SECTION*/
+
+.project-section-p {
+    font-size: var(--fs-100);
+}
+
+.service-icons {
+    font-size: var(--fs-icons);
+}
+
 
 /*PROJECTS SECTION*/
 
@@ -192,6 +203,35 @@ main {
     padding-bottom: 2rem;
 }
 
+/*SERVICES SECTION*/
+
+.services-section-container {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.services-section-split-left {
+    padding-right: 1rem;
+}
+
+.services-section-split-right {
+    padding-left: 1rem;
+}
+
+.services-section-container-left,
+.services-section-container-right {
+    display: flex;
+}
+
+.container-service-icons {
+    padding-right: 1.5rem;
+}
+
+.services-h4 {
+    padding-bottom: 0.8rem;
+}
+
+
 /*PROJECTS SECTION*/
 
 section {
@@ -253,6 +293,10 @@ i:hover {
     opacity: 0.8;
 }
 
+.service-icons:hover {
+    rotate: -360deg;
+}
+
 .header-text:hover {
     transition: 0.3s ease;
     color: var(--fc-terceary);
@@ -283,6 +327,10 @@ main {
 
 h2 {
     border-bottom: 0.188rem solid var(--fc-terceary);
+}
+
+.services-section {
+    border-bottom: 0.15rem solid rgba(210, 215, 217, 0.75);
 }
 
 .project-section-container-split-img {
@@ -322,6 +370,10 @@ h2 {
     color: var(--fc-secondary);
 }
 
+.dark-mode-buttons {
+    color: var(--fc-terceary);
+}
+
 #darkMode {
     cursor: pointer;
 }
@@ -335,7 +387,7 @@ h2 {
 /*******************************************/
 
 @media (max-width: 40rem) {
-    
+
     header {
         display: flex;
         flex-direction: column-reverse;
@@ -357,6 +409,7 @@ h2 {
     }
 
     .main-container,
+    .services-section-container,
     .project-section-container {
         display: block;
     }
@@ -375,6 +428,7 @@ h2 {
         padding-right: 0rem;
     }
     
+    .services-section-split-right,
     .project-section-split-right {
         padding-left: 0rem;
     }
@@ -400,4 +454,5 @@ h2 {
         padding-left: 0rem;
         padding-bottom: 3rem;
     }
+
 }

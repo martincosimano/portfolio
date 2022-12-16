@@ -7,6 +7,11 @@ function shiftMode() {
     document.querySelector('.header-text').classList.add('dark-mode-ommit')
     document.querySelector('.main-text').classList.add('dark-mode-ommit')
 
+    const buttons = document.querySelectorAll('.button')
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.add('dark-mode-buttons')
+    }
+
     const projectSectionParagraphs = document.querySelectorAll('.project-section-p')
     for (let i = 0; i < projectSectionParagraphs.length; i++) {
         projectSectionParagraphs[i].classList.add('dark-mode-ommit')
