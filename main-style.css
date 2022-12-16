@@ -251,7 +251,6 @@ a {
 i:hover {
     color: var(--fc-terceary);
     opacity: 0.8;
-    rotate: -360deg;
 }
 
 .header-text:hover {
@@ -323,8 +322,12 @@ h2 {
     color: var(--fc-secondary);
 }
 
-.dark-mode-buttons {
-    background-color: #132113;
+#darkMode {
+    cursor: pointer;
+}
+
+#darkMode:active {
+    rotate: -360deg;
 }
 
 /******************************************

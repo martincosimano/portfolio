@@ -291,6 +291,9 @@ a {
 i:hover {
     color: var(--fc-terceary);
     opacity: 0.8;
+}
+
+.service-icons:hover {
     rotate: -360deg;
 }
 
@@ -367,8 +370,12 @@ h2 {
     color: var(--fc-secondary);
 }
 
-.dark-mode-buttons {
-    background-color: #132113;
+#darkMode {
+    cursor: pointer;
+}
+
+#darkMode:active {
+    rotate: -360deg;
 }
 
 /******************************************
@@ -442,4 +449,5 @@ h2 {
     .main-container-photo {
         padding-left: 0rem;
     }
+
 }

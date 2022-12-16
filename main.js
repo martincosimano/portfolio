@@ -17,11 +17,6 @@ function shiftMode() {
         serviceIcons[i].classList.add('dark-mode-ommit')
     }
 
-    // const buttons = document.querySelectorAll('.button')
-    // for (let i = 0; i < buttons.length; i++) {
-    //     buttons[i].classList.add('dark-mode-buttons')
-    // }
-
     const darkIcon = document.querySelector('#darkMode')
     if(darkIcon.className === 'fa-regular fa-sun') {
         darkIcon.className = 'fa-regular fa-moon'
