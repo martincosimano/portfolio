@@ -18,12 +18,12 @@ function shiftMode() {
    if(darkIcon.className === 'fa-regular fa-sun') {
         darkIcon.className = 'fa-regular fa-moon'
         document.querySelectorAll(".returnIndex").forEach(x=>x.href = "index.html")
-        document.querySelectorAll(".returnAbout").forEach(x=>x.href = "about.html")
+        document.querySelectorAll(".returnAbout").forEach(x=>x.href = "aboutme.html")
         console.log("day")
     }else if(darkIcon.className === 'fa-regular fa-moon'){
         darkIcon.className = 'fa-regular fa-sun'
         document.querySelectorAll(".returnIndex").forEach(x=>x.href = "index2.html")
-        document.querySelectorAll(".returnAbout").forEach(x=>x.href = "about2.html")
+        document.querySelectorAll(".returnAbout").forEach(x=>x.href = "aboutme2.html")
         console.log("night") 
 
     }
