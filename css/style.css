@@ -200,7 +200,14 @@ main {
 
 .main-text {
     padding-top: 1rem;
-    padding-bottom: 2rem;
+}
+
+.main-button-container {
+    padding-top: 2rem;
+}
+
+.about-me {
+    padding-bottom: 1rem;
 }
 
 /*SERVICES SECTION*/
@@ -312,13 +319,17 @@ main {
 
 .button {
     color: var(--fc-terceary);
-    text-transform: uppercase;
     font-size: var(--fs-50);
     font-weight: var(--fw-primary);
     letter-spacing: 0.075em;
     border: 0.125rem solid var(--fc-terceary);
     border-radius: 0.375em;
     padding:  0.7rem 1.125rem;
+}
+
+.button,
+.uppercase-text {
+    text-transform: uppercase;
 }
 
 .button:hover {
@@ -382,6 +393,17 @@ h2 {
     rotate: -360deg;
 }
 
+.module {
+    padding-inline: 1rem;
+    border-width: 0.188rem;
+    border-style: solid;
+    border-image: 
+        radial-gradient(
+        #00C853, 
+        rgba(0, 0, 0, 0)
+        )0 100%;
+}
+
 /******************************************
 /* MEDIA QUERY
 /*******************************************/
@@ -408,6 +430,10 @@ h2 {
         gap: 2rem;
     }
 
+    main {
+        padding-bottom: 2rem;
+    }
+
     .main-container,
     .services-section-container,
     .project-section-container {
@@ -418,10 +444,6 @@ h2 {
         width: 100%;
     }
 
-    .main-button-container {
-        display: flex;
-        justify-content: center;
-    }
 
     .services-section-split-left,
     .project-section-split-left {

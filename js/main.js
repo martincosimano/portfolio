@@ -5,7 +5,11 @@ function shiftMode() {
     document.body.classList.toggle('dark-mode-fonts')
     
     document.querySelector('.header-text').classList.add('dark-mode-ommit')
-    document.querySelector('.main-text').classList.add('dark-mode-ommit')
+
+    const mainText = document.querySelectorAll('.main-text')
+    for (let i = 0; i < mainText.length; i++) {
+        mainText[i].classList.add('dark-mode-ommit')
+    }
 
     const buttons = document.querySelectorAll('.button')
     for (let i = 0; i < buttons.length; i++) {
