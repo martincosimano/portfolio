@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
@@ -19,7 +20,7 @@
 
         <!-- Header & Nav -->
 
-        <header>
+        <header data-aos="fade-down">
             <div class="header-container-text">
                 <a href="index.html" class="return-home">
                     <p class="header-text">Changing the World <strong>1 line of Code</strong> at a time</p>
@@ -43,18 +44,18 @@
 
        <!-- Main -->
         
-        <main>
+        <main data-aos="fade-up">
             <div class="main-container">
                 
                 <div class="main-container-split main-container-photo">
-                    <div class="headshot-container">
+                    <div class="headshot-container" data-aos="flip-left">
                         <img src="images/headshot.jpg" alt="" class="headshot">
                     </div>
                 </div>
                 
                 <div class="main-container-split main-container-text">
                     <h1 class="about-me">About Me</h1>
-                    <div class="module">
+                    <div class="module" data-aos="fade-right">
                         <p class="main-text">My name is Martín. I'm a passionate software engineer from Argentina. As a kid, I used to wonder how things work, and I still do. Since my early years I have been interested in technology and computer science.</p>
                         <p class="main-text">I consider myself a creative person with a growth mindset, constantly looking for ways to develop knowledge and learn new skills.</p>
                         <p class="main-text">When I'm not coding, I spend my time outdoors, enjoying the fresh air, or just walking around.  Nature inspires my work, and encourages me thinking of new ways to achieve a positive impact on the world.</p>
@@ -71,10 +72,10 @@
 
         <!-- Services Section -->
 
-        <section class="services-section">
+        <section class="services-section" data-aos="fade-up">
             <h2>Services</h2>
 
-            <div class="services-section-container">
+            <div class="services-section-container" data-aos="fade-right">
 
                 <!-- Left Container -->
                 <div class="services-section-container-split services-section-split-left">
@@ -134,13 +135,13 @@
 
         <!-- Projects Section -->
 
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <h2>Latest Projects</h2>
 
             <div class="project-section-container">
 
                 <!-- Left Container -->
-                <div class="project-section-container-split project-section-split-left">
+                <div class="project-section-container-split project-section-split-left" data-aos="fade-right">
 
                     <div class="project-section-container-left">
                         <div class="project-section-container-split-img">
@@ -166,7 +167,7 @@
                 </div>
 
                 <!-- Right Container -->
-                <div class="project-section-container-split project-section-split-right">
+                <div class="project-section-container-split project-section-split-right" data-aos="fade-left">
                     
                     <div class="project-section-container-right project-section-border-top-mdq">
                         <div class="project-section-container-split-img">
@@ -200,5 +201,9 @@
 
     </div>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+          AOS.init();
+    </script>
 </body>
 </html>

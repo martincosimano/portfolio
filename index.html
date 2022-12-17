@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
@@ -19,7 +20,7 @@
 
         <!-- Header & Nav -->
 
-        <header>
+        <header data-aos="fade-down">
             <div class="header-container-text">
                 <a href="index.html" id="return-home">
                     <p class="header-text">Changing the World <strong>1 line of Code</strong> at a time</p>
@@ -43,18 +44,20 @@
 
        <!-- Main -->
         
-        <main>
+        <main data-aos="fade-up">
             <div class="main-container">
                 
                 <div class="main-container-split main-container-photo">
-                    <div class="headshot-container">
+                    <div class="headshot-container" data-aos="flip-left">
                         <img src="images/headshot.jpg" alt="" class="headshot">
                     </div>
                 </div>
 
                 <div class="main-container-split main-container-text">
                     <h1>Hi, I'm Martín,<br>Your Next Software Engineer</br></h1>
-                    <p class="main-text uppercase-text">Ready to change the world?</p>
+                    <div class="module" data-aos="fade-right">
+                        <p class="main-text uppercase-text">Ready to change the world?</p>
+                    </div>
                     <div class="main-button-container">
                         <a href="aboutme.html" class="button">Meet me</a>
                     </div>
@@ -67,13 +70,13 @@
 
         <!-- Projects Section -->
 
-        <section class="project-section">
+        <section class="project-section" data-aos="fade-up">
             <h2>Latest Projects</h2>
 
             <div class="project-section-container">
 
                 <!-- Left Container -->
-                <div class="project-section-container-split project-section-split-left">
+                <div class="project-section-container-split project-section-split-left" data-aos="fade-right">
 
                     <div class="project-section-container-left">
                         <div class="project-section-container-split-img">
@@ -99,7 +102,7 @@
                 </div>
 
                 <!-- Right Container -->
-                <div class="project-section-container-split project-section-split-right">
+                <div class="project-section-container-split project-section-split-right" data-aos="fade-left">
                     
                     <div class="project-section-container-right project-section-border-top-mdq">
                         <div class="project-section-container-split-img">
@@ -133,5 +136,9 @@
 
     </div>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+          AOS.init();
+    </script>
 </body>
 </html>
