@@ -274,6 +274,7 @@ section {
 }
 
 .project-section-p {
+    height: 8rem;
     padding-bottom: 3.5rem;
 }
 
@@ -475,6 +476,10 @@ h2 {
     .main-container-photo {
         padding-left: 0rem;
         padding-bottom: 3rem;
+    }
+    
+    .project-section-p {
+        height: 5rem;
     }
 
 }
