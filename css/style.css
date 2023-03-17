@@ -417,4 +417,10 @@ h2 {
         padding-left: 0rem;
         padding-bottom: 3rem;
     }
+    .text-center {
+        text-align: center;
+    }
+    h2 {
+        display: block;
+    }
 }
