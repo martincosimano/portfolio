@@ -11,6 +11,7 @@ function shiftMode() {
     document.querySelectorAll(".main-text").forEach(x=>x.classList.add("dark-mode-ommit"))
     document.querySelectorAll(".button").forEach(x=>x.classList.add("dark-mode-buttons"))
     document.querySelectorAll(".project-section-p").forEach(x=>x.classList.add("dark-mode-ommit"))
+    document.querySelectorAll(".p-description").forEach(x=>x.classList.add("dark-mode-ommit"))
     document.querySelectorAll(".service-icons").forEach(x=>x.classList.add("dark-mode-ommit"))
 
     const returnIndex = document.querySelectorAll('.returnIndex')
