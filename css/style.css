@@ -263,6 +263,10 @@ section {
     padding-left: 1rem;
 }
 
+.project-section-container-split {
+    width: 100%;
+}
+
 .project-section-container-split img {
     width: 100%;
     border-radius: 0.375em;
@@ -276,6 +280,12 @@ section {
 .project-section-p {
     height: 8rem;
     padding-bottom: 3.5rem;
+    padding-top: 0.5rem;
+}
+
+.p-description {
+    height: 8.75rem;
+    padding-block: 0.5rem;
 }
 
 .visit-container {
