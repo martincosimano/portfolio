@@ -130,6 +130,9 @@ h4 {
 html {
     scroll-behavior: smooth;
 }
+section {
+    padding-block: 2.5rem;
+}
 
 /*HEADER & NAV*/
 
@@ -182,10 +185,10 @@ main {
     border-radius: 0.375em;
 }
 .main-text {
-    padding-top: 1rem;
+    padding-block: 1rem;
 }
 .main-button-container {
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
 .about-me {
     padding-bottom: 1rem;
@@ -215,33 +218,33 @@ main {
 
 /*PROJECTS SECTION*/
 
-section {
-    padding-top: 3.5rem;
-}
-.project-section-container {
+.projects {
     display: flex;
-    margin-top: 3rem;
+    flex-wrap: wrap;
+    margin: 3rem 0 2rem -6rem;
+    width: calc(100% + 6rem);
 }
-.project-section-container-left,
-.project-section-container-right {
-    padding-bottom: 3.5rem;
+
+.projects article {
+    display: block;
+    position: relative;
+    width: calc(50% - 7em);
+    margin: 0 0 6em 6em;
 }
-.project-section-split-left {
-    padding-right: 1rem;
+.projects-a-img {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
-.project-section-split-right {
-    padding-left: 1rem;
-}
-.project-section-container-split {
-    width: 100%;
-}
-.project-section-container-split img {
+.projects-img {
+    display: block;
+    position: relative;
     width: 100%;
     border-radius: 0.375em;
+    transition: 0.2s ease;
 }
-.project-section-border-top {
-    padding-top: 3.5rem;
-    padding-bottom: 0;
+.projects-img:hover {
+    transform: scale(1.05);
 }
 .project-section-p {
     padding-bottom: 2rem;
@@ -249,13 +252,6 @@ section {
 }
 .p-description {
     padding-block: 0.5rem;
-}
-.visit-container {
-    display: flex;
-    justify-content: center;
-}
-.text-container {
-    padding-block: 1rem;
 }
 
 /******************************************
@@ -308,23 +304,26 @@ h2 {
 .services-section {
     border-bottom: 0.15rem solid rgba(210, 215, 217, 0.75);
 }
-.project-section-container-split-img {
-    overflow: hidden;
+.project--border::before {
+    background: rgba(210, 215, 217, 0.75);
+    content: '';
+    display: block;
+    height: calc(100% + 3.2rem);
+    left: -3em;
+    position: absolute;
+    top: 0;
+    width: 1px;
 }
-.project-section-container-split img {
-    transition: 0.2s ease;
-}
-.project-section-container-split img:hover {
-    transform: scale(1.05);
-}
-.project-section-split-left {
-    border-right: 0.1rem solid var(--bc-primary);
-}
-.project-section-split-right {
-    border-left: 0.1rem solid var(--bc-primary);
-}
-.project-section-border-top {
-    border-top: 0.1rem solid var(--bc-primary);
+
+.projects article::after {
+    background: rgba(210, 215, 217, 0.75);
+    bottom: -3em;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    width: 100%;
 }
 .dark-mode {
     transition: 0.5s ease;
@@ -385,8 +384,7 @@ h2 {
         padding-bottom: 2rem;
     }
     .main-container,
-    .services-section-container,
-    .project-section-container {
+    .services-section-container {
         display: block;
     }
     .main-container-split {
@@ -402,25 +400,22 @@ h2 {
     h2 {
         display: block;
     }
+    .main-button-container {
+        padding-block: 3rem;
+    }
     /* PROJECT */
-    .project-section-split-left {
-        padding-right: 0rem;
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem 0 0 0;
+        width: 100%;
     }
-    .project-section-split-right {
-        padding-left: 0rem;
-    }
-    .project-section-split-left {
-        border-right: none;
-    }
-    .project-section-split-right {
-        border-left: none;
-    }
-    .project-section-border-top-mdq {
-        border-top: 0.1rem solid var(--bc-primary);
-        padding-top: 3.5rem;
-    }
-    .project-section-border-top {
-        padding-bottom: 3.5rem;
+    
+    .projects article {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0 0 6rem 0;
     }
     /* SERVICES  */
     .services-section-container {
