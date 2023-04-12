@@ -114,6 +114,17 @@ h4 {
     font-weight: var(--fw-primary);
 }
 
+/* FOOTER */
+
+footer {
+    padding-block: 1rem;
+}
+
+.copyright {
+    font-size: var(--fs-50);
+    text-align: center;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
