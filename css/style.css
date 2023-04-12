@@ -219,10 +219,13 @@ main {
 
 /*PROJECTS SECTION*/
 
+.project-section {
+    padding-bottom: 0rem;
+}
 .projects {
     display: flex;
     flex-wrap: wrap;
-    margin: 3rem 0 2rem -6rem;
+    margin: 3rem 0 0rem -6rem;
     width: calc(100% + 6rem);
 }
 
