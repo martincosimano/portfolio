@@ -250,6 +250,7 @@ main {
     display: block;
     overflow: hidden;
     margin-bottom: 1rem;
+    border-radius: 0.375em;
 }
 .projects-img {
     display: block;
