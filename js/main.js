@@ -3,7 +3,7 @@ const darkIcon = document.querySelector('#darkMode')
 document.querySelector('#darkMode').addEventListener('click', shiftMode)
 
 darkIcon.addEventListener('keydown', function(event) {
-    if (event.keyCode === 13) {
+    if (event.key === "Enter") {
         darkIcon.click();
     }
 });
