@@ -1,6 +1,12 @@
+const darkIcon = document.querySelector('#darkMode')
+
 document.querySelector('#darkMode').addEventListener('click', shiftMode)
 
-const darkIcon = document.querySelector('#darkMode')
+darkIcon.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13) {
+        darkIcon.click();
+    }
+});
 
 function shiftMode() {
     document.body.classList.toggle('dark-mode')
