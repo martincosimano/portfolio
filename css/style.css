@@ -6,7 +6,7 @@
     --fc-starter: #F2F2F2;
     --fc-primary: #3D4449;
     --fc-secondary: #7F888F;
-    --fc-tertiary: #218d4c;
+    --fc-tertiary: #145C21;
 
     --bc-primary: rgba(210, 215, 217, 0.75);
 
@@ -387,7 +387,7 @@ h2 {
     border-style: solid;
     border-image: 
         radial-gradient(
-        #00C853, 
+        #145C21, 
         rgba(0, 0, 0, 0)
         )0 100%;
 }
