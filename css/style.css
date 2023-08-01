@@ -114,6 +114,12 @@ h1 {
     font-size: var(--fs-icons);
 }
 
+.services-title,
+.projects-title {
+    font-size: var(--fs-200);
+    font-weight: bold;
+}
+
 
 /*PROJECTS SECTION*/
 
@@ -239,7 +245,7 @@ main {
 .container-service-icons {
     padding-right: 1.5rem;
 }
-.services-h4 {
+.services-title {
     padding-bottom: 0.8rem;
 }
 
@@ -371,9 +377,6 @@ h2 {
     color: var(--bg-primary);
 }
 
-.dark-mode-buttons {
-    color: var(--fc-tertiary);
-}
 #darkMode {
     cursor: pointer;
 }
