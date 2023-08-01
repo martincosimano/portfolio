@@ -71,7 +71,8 @@ body {
     color: var(--fc-primary);
 }
 
-strong {
+.header-decoration,
+.technologies {
     font-weight: bold;
 }
 
