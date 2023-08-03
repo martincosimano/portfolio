@@ -326,7 +326,8 @@ main {
     border-bottom: 0.15rem solid rgba(210, 215, 217, 0.75);
 }
 .button {
-    color: var(--fc-tertiary);
+    color: var(--fc-starter);
+    background-color: var(--fc-tertiary);
     font-size: var(--fs-50);
     font-weight: var(--fw-primary);
     letter-spacing: 0.075em;
