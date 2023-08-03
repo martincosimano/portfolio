@@ -204,6 +204,7 @@ main {
 }
 .main-container-photo {
     padding-left: 2rem;
+    padding-top: 2rem;
 }
 .headshot-container {
     display: block;
@@ -437,6 +438,7 @@ h2 {
     }
     .main-container-photo {
         padding-left: 0rem;
+        padding-top: 0rem;
         padding-bottom: 3rem;
     }
     .text-center {
