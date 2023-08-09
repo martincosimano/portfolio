@@ -12,6 +12,7 @@
 
     /*FONT*/
     --ff-primary: 'Roboto Slab', sans-serif;
+    --ff-secondary: 'Raleway', sans-serif;
 
     --fs-icons-nav: 1.3rem;
     --fs-icons: 1.5rem;
@@ -58,7 +59,7 @@ body {
 }
 * {
     font-weight: var(--fw-secondary);
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     font-size: var(--fs-100);
     line-height: 1.65;
     color: var(--fc-primary);
@@ -83,6 +84,7 @@ p {
 /*HEADER & NAV*/
 
 .header-text {
+    font-family: var(--ff-primary);
     font-size: var(--fs-200);
 }
 
@@ -98,10 +100,16 @@ i {
 /*MAIN*/
 
 h1 {
+    font-family: var(--ff-primary);
     color: var(--fc-primary);
     font-size: var(--fs-xl);
     font-weight: var(--fw-primary);
     line-height: 1.3;
+}
+
+.module span {
+    font-weight: 700;
+    opacity: 0.88;
 }
 
 .main-text {
@@ -202,13 +210,17 @@ main {
 .main-container-split {
     width: 50%;
 }
+.main-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .main-container-photo {
     padding-left: 2rem;
-    padding-top: 2rem;
 }
 .headshot-container {
     display: block;
-    height: 26em;
+    height: 100%;
     width: 100%;
 }
 .headshot {
@@ -327,6 +339,7 @@ main {
     border-bottom: 0.15rem solid rgba(210, 215, 217, 0.75);
 }
 .button {
+    font-family: var(--ff-primary);
     color: var(--fc-starter);
     background-color: var(--fc-tertiary);
     font-size: var(--fs-50);
@@ -386,7 +399,6 @@ h2 {
     rotate: -360deg;
 }
 .module {
-    margin-top: 2rem;
     padding-inline: 1rem;
     border-width: 0.188rem;
     border-style: solid;
