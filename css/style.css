@@ -270,6 +270,7 @@ main {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 3rem 0 0rem -6rem;
     width: calc(100% + 6rem);
 }
@@ -367,7 +368,7 @@ h2 {
     content: '';
     display: block;
     height: calc(100% + 3.2rem);
-    right: 51%;
+    right: 50%;
     position: fixed;
     top: 0;
     width: 1px;
