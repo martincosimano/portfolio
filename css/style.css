@@ -213,7 +213,7 @@ main {
 .main-container-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .main-container-photo {
     padding-left: 2rem;
