@@ -226,18 +226,21 @@ main {
 .project-section {
     padding-bottom: 0rem;
 }
+.projects-container {
+    height: 100%;
+}
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 3rem 0 0rem -6rem;
-    width: calc(100% + 6rem);
+    justify-content: space-around;
+    gap: 2rem;
 }
 .projects article {
     display: block;
     position: relative;
     width: calc(50% - 7em);
     margin: 0 0 6em 6em;
+    margin-inline: 0;
 }
 .projects-a-img {
     display: block;
@@ -256,7 +259,6 @@ main {
     transform: scale(1.05);
 }
 .project-section-p {
-    padding-bottom: 2rem;
     padding-top: 0.5rem;
     min-height: 5.813rem;
 }
@@ -286,8 +288,10 @@ i:hover {
 header {
     border-bottom: 0.313rem solid var(--fc-tertiary-l);
 }
-main {
-    border-bottom: 0.15rem solid rgba(210, 215, 217, 0.75);
+.projects {
+    border-top: 0.15rem solid rgba(210, 215, 217, 0.75);
+    margin-top: 2rem;
+    padding-top: 3rem;
 }
 .btn {
     background-image: linear-gradient(to right, var(--fc-tertiary-l) 15%, #143f16 100%);
@@ -319,9 +323,9 @@ h2 {
     height: calc(100% + 3.2rem);
     right: 50%;
     position: fixed;
-    top: 0;
+    top: 8.5%;
     width: 1px;
-    height: 96.6%;
+    height: 88.3%;
 }
 .projects article::after {
     background: rgba(210, 215, 217, 0.75);
