@@ -325,9 +325,9 @@ h2 {
     height: calc(100% + 3.2rem);
     right: 50%;
     position: fixed;
-    top: 8.5%;
+    top: 8.1%;
     width: 1px;
-    height: 88.3%;
+    height: 88.9%;
 }
 .projects article::after {
     background: rgba(210, 215, 217, 0.75);
@@ -471,5 +471,9 @@ h2.dark-decoration {
     }
     .projects article::before {
         display: none;
+    }
+    .projects-title-container {
+        display: flex;
+        justify-content: center;
     }
 }
