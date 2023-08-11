@@ -159,7 +159,8 @@ html {
     scroll-behavior: smooth;
 }
 section {
-    padding-block: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 /*HEADER & NAV*/
@@ -229,6 +230,10 @@ main {
 .projects-container {
     height: 100%;
 }
+.projects-title-container {
+    display: flex;
+    justify-content: center;
+}
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -294,6 +299,9 @@ header {
     border-top: 0.15rem solid rgba(210, 215, 217, 0.75);
     margin-top: 2rem;
     padding-top: 3rem;
+}
+.btn-container {
+    text-align: center;
 }
 .btn {
     background-image: linear-gradient(to right, var(--fc-tertiary-l) 15%, #143f16 100%);
@@ -471,9 +479,5 @@ h2.dark-decoration {
     }
     .projects article::before {
         display: none;
-    }
-    .projects-title-container {
-        display: flex;
-        justify-content: center;
     }
 }
