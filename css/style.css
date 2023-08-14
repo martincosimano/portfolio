@@ -333,9 +333,9 @@ h2 {
     height: calc(100% + 3.2rem);
     right: 50%;
     position: fixed;
-    top: 8.1%;
+    top: 7.2%;
     width: 1px;
-    height: 88.9%;
+    height: 89.7%;
 }
 .projects article::after {
     background: rgba(210, 215, 217, 0.75);
