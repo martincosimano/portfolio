@@ -307,7 +307,7 @@ header {
     background-image: linear-gradient(to right, var(--fc-tertiary-l) 15%, #143f16 100%);
     border: none;
     border-radius: 0.375em;
-    padding:  0.75rem 1.75rem;
+    padding:  0.75rem 3.75rem;
     cursor: pointer;
     color: var(--fc-starter);
     font-family: var(--ff-primary);
@@ -360,26 +360,9 @@ h2 {
 #darkMode:active {
     rotate: -360deg;
 }
-.module {
-    padding-inline: 1rem;
-    border-width: 0.188rem;
-    border-style: solid;
-    border-image: 
-        radial-gradient(
-        var(--fc-tertiary-l), 
-        rgba(0, 0, 0, 0)
-        )0 100%;
-}
 
 /*ACCESSIBILITY COLORS IN DARK/LIGHT*/
 
-.module.dark-decoration {
-    border-image: 
-    radial-gradient(
-    var(--fc-tertiary-d), 
-    rgba(0, 0, 0, 0)
-    )0 100%;
-}
 .text-decoration {
     color: var(--fc-tertiary-l);
 }
